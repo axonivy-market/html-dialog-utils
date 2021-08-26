@@ -1,0 +1,88 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:ic="http://ivyteam.ch/jsf/component"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions">
+<h:body>
+	<ui:composition template="/layouts/frame-8.xhtml">
+		<ui:define name="title">Read-Only Html Dialog Demo</ui:define>
+		<ui:define name="content">
+			<f:phaseListener binding="#{data.readOnlyListener}" />
+			
+			<h3>Read-Only Html Dialog Demo</h3>
+			
+			<h:form id="form">
+				<p:messages />
+				
+				<p:fieldset id="htmlDialogFieldset">
+					<f:facet name="legend">
+						<p:outputLabel id="readOnlyHtmlDialogLabel" value="Read-Only Html Dialog" rendered="#{data.isReadOnly}"/>
+						<p:outputLabel id="editableHtmlDialogLabel" value="Editable Html Dialog" rendered="#{not data.isReadOnly}"/>
+					</f:facet>
+					<div class="ui-g">
+						<div class="ui-g-6">
+							<p:panelGrid columns="2" layout="grid" styleClass="ui-panelgrid-blank"
+									columnClasses="ui-g-12 ui-md-5,ui-g-12 ui-md-7">
+								<p:outputLabel for="selectBooleanCheckbox" value="Diesel"/>
+								<p:selectBooleanCheckbox id="selectBooleanCheckbox" value="#{data.demoData.isSelected}"/>
+								
+								<p:outputLabel for="selectOneMenu" value="Car"/>
+								<p:selectOneMenu id="selectOneMenu" value="#{data.demoData.carType}">
+									<f:selectItem itemLabel="BMW" itemValue="BMW" />
+									<f:selectItem itemLabel="Citroen" itemValue="Citroen" />
+									<f:selectItem itemLabel="Mercedes" itemValue="Mercedes" />
+								</p:selectOneMenu>
+								
+								<p:outputLabel for="selectOneRadio" value="Console"/>
+								<p:selectOneRadio id="selectOneRadio" value="#{data.demoData.console}">
+									<f:selectItem itemLabel="Xbox One" itemValue="XboxOne" />
+									<f:selectItem itemLabel="PS4" itemValue="PS4" />
+									<f:selectItem itemLabel="Wii U" itemValue="WiiU" />
+								</p:selectOneRadio>
+							</p:panelGrid>
+						</div>
+						<div class="ui-g-6">
+						</div>
+						<div class="ui-g-12">
+							<p:panelGrid columns="1" layout="grid" styleClass="ui-panelgrid-blank">
+								<p:outputLabel for="inputTextarea" value="Comment"/>
+								<p:inputTextarea id="inputTextarea" value="#{data.demoData.comment}"/>
+							</p:panelGrid>
+						</div>
+						<div class="ui-g-10">
+						</div>
+						<div class="ui-g-2">
+							<p:commandButton id="addNewButton" value="Add new Car owner" process="dataTable" 
+									actionListener="#{logic.onAddNew}" update="dataTable"/>
+						</div>
+						<div class="ui-g-12">
+							<p:dataTable id="dataTable" value="#{data.demoData.listEntries}" 
+									var="entry" editable="true">
+								<f:facet name="header">
+									<p:outputLabel value="List of Car owners"/>
+								</f:facet>
+								
+								<p:column headerText="Car owner">
+									<p:inputText id="carOwnerInputText" value="#{entry.carOwner}"/>
+								</p:column>
+								<p:column headerText="Entry date">
+									<p:calendar id="entryDateCalendar" mask="true" 
+											value="#{entry.entryDate}" pattern="dd.MM.yyyy"/>
+								</p:column>
+							</p:dataTable>
+						</div>
+					</div>
+				</p:fieldset>
+				<br />
+				<div class="command-btns">
+					<p:commandButton id="proceed" actionListener="#{logic.close}" value="Proceed" 
+							update="form" icon="ui-icon-check" styleClass="doNotDisable"/>
+				</div>
+			</h:form>
+
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

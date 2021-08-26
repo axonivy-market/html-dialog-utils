@@ -1,0 +1,8 @@
+HtmlDialogData #class
+com.axonivy.market.utils.htmldialog.demo.HtmlDialog #namespace
+demoData com.axonivy.market.utils.htmldialog.demo.Data #field
+demoData PERSISTENT #fieldModifier
+isReadOnly Boolean #field
+isReadOnly PERSISTENT #fieldModifier
+readOnlyListener com.axonivy.market.utils.htmldialog.ReadOnlyModeListener #field
+readOnlyListener PERSISTENT #fieldModifier
