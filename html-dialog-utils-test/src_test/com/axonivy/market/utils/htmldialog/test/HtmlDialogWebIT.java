@@ -29,7 +29,7 @@ import com.axonivy.ivy.webtest.engine.EngineUrl;
  * </p>
  * 
  */
-@IvyWebTest(headless = false)
+@IvyWebTest
 public class HtmlDialogWebIT {
 
 	@Test
