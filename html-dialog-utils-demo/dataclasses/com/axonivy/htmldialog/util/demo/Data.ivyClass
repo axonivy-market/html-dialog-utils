@@ -1,0 +1,7 @@
+Data #class
+com.axonivy.htmldialog.util.demo #namespace
+comment String #field
+isSelected Boolean #field
+carType String #field
+console String #field
+listEntries java.util.List<com.axonivy.htmldialog.util.demo.Entry> #field
