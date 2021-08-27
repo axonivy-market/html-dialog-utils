@@ -1,4 +1,4 @@
 Entry #class
-com.axonivy.market.utils.htmldialog.demo #namespace
+com.axonivy.htmldialog.util.demo #namespace
 carOwner String #field
 entryDate java.util.Date #field

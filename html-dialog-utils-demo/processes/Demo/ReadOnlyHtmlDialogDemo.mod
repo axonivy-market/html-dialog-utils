@@ -33,9 +33,9 @@ Ro0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 Ro0 f0 @C|.responsibility Everybody #txt
 Ro0 f0 81 49 30 30 -21 17 #rect
 Ro0 f1 497 49 30 30 0 15 #rect
-Ro0 f3 dialogId com.axonivy.market.utils.htmldialog.demo.HtmlDialog #txt
-Ro0 f3 startMethod start(com.axonivy.market.utils.htmldialog.demo.Data) #txt
-Ro0 f3 requestActionDecl '<com.axonivy.market.utils.htmldialog.demo.Data demoData> param;' #txt
+Ro0 f3 dialogId com.axonivy.htmldialog.util.demo.HtmlDialog #txt
+Ro0 f3 startMethod start(com.axonivy.htmldialog.util.demo.Data) #txt
+Ro0 f3 requestActionDecl '<com.axonivy.htmldialog.util.demo.Data demoData> param;' #txt
 Ro0 f3 requestMappingAction 'param.demoData=in.demoData;
 ' #txt
 Ro0 f3 responseMappingAction 'out=in;
@@ -44,16 +44,16 @@ out.demoData=result.demoData;
 Ro0 f3 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <elementInfo>
     <language>
-        <name>Show &#13;
+        <name>Show  &#13;
 editable UI</name>
     </language>
 </elementInfo>
 ' #txt
 Ro0 f3 168 42 112 44 -28 -16 #rect
 Ro0 f4 111 64 168 64 #arcP
-Ro0 f5 dialogId com.axonivy.market.utils.htmldialog.demo.HtmlDialog #txt
-Ro0 f5 startMethod startReadOnly(com.axonivy.market.utils.htmldialog.demo.Data) #txt
-Ro0 f5 requestActionDecl '<com.axonivy.market.utils.htmldialog.demo.Data demoData> param;' #txt
+Ro0 f5 dialogId com.axonivy.htmldialog.util.demo.HtmlDialog #txt
+Ro0 f5 startMethod startReadOnly(com.axonivy.htmldialog.util.demo.Data) #txt
+Ro0 f5 requestActionDecl '<com.axonivy.htmldialog.util.demo.Data demoData> param;' #txt
 Ro0 f5 requestMappingAction 'param.demoData=in.demoData;
 ' #txt
 Ro0 f5 responseMappingAction 'out=in;
@@ -70,7 +70,7 @@ read-only UI</name>
 Ro0 f5 328 42 112 44 -32 -16 #rect
 Ro0 f6 280 64 328 64 #arcP
 Ro0 f2 440 64 497 64 #arcP
->Proto Ro0 .type com.axonivy.market.utils.htmldialog.demo.ReadOnlyHtmlDialogDemoData #txt
+>Proto Ro0 .type com.axonivy.htmldialog.util.demo.ReadOnlyHtmlDialogDemoData #txt
 >Proto Ro0 .processKind NORMAL #txt
 >Proto Ro0 0 0 32 24 18 0 #rect
 >Proto Ro0 @|BIcon #fIcon

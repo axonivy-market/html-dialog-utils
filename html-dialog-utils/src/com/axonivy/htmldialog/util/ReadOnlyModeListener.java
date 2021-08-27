@@ -1,4 +1,4 @@
-package com.axonivy.market.utils.htmldialog;
+package com.axonivy.htmldialog.util;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

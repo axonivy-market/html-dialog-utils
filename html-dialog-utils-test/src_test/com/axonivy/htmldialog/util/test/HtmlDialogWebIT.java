@@ -1,4 +1,4 @@
-package com.axonivy.market.utils.htmldialog.test;
+package com.axonivy.htmldialog.util.test;
 
 import static com.codeborne.selenide.Condition.disabled;
 import static com.codeborne.selenide.Condition.enabled;
@@ -17,17 +17,8 @@ import com.axonivy.ivy.webtest.engine.EngineUrl;
 /**
  * This HtmlDialog WebTest starts the ReadOnlyHtmlDialogDemo process in a real browser 
  * and fill the editable fields in the first step.
- * Next step is to verify that the previously edited fields are shown as read-only fields in the next Html Dialog.
- * <p>
- * The test can either be run
- * <ul>
- * <li>in the Designer IDE ( <code>right click > run as > JUnit Test </code>
- * )</li>
- * <li>or in a Maven continuous integration build pipeline (
- * <code>mvn clean verify</code> )</li>
- * </ul>
- * </p>
- * 
+ * Next step is to verify that the previously edited fields are shown as read-only fields in the next HTML Dialog.
+ *
  */
 @IvyWebTest
 public class HtmlDialogWebIT {
@@ -77,7 +68,6 @@ public class HtmlDialogWebIT {
 	}
 
 	private void fillEditableHtmlDialog() {
-		// fill Editable Html Dialog form
 		$(By.id("form:selectBooleanCheckbox")).shouldBe(enabled).click();
 		
 		$(By.id("form:selectOneMenu")).shouldBe(enabled).click();
