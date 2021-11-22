@@ -17,14 +17,14 @@ The **ReadOnlyModeListener** will loop through all the included sub UI component
 
 1. Fill in the following editable Html-Dialog form
 
-   ![Editable-Html-Dialog](images/EditableHtmlDialog.PNG)
+   ![Editable-Html-Dialog](images/EditableHtmlDialog.png)
 
 and click on "Proceed".
 
 
 2. In the next step the same Html-Dialog will be rendered as Read-Only without adding any extra attributes to the JSF UI components.
 
-   ![Read-Only-Html-Dialog](images/Read-OnlyHtmlDialog.PNG)
+   ![Read-Only-Html-Dialog](images/Read-OnlyHtmlDialog.png)
 
 ## Setup
 
