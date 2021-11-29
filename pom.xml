@@ -3,7 +3,7 @@
   <groupId>com.axonivy.market.utils</groupId>
   <name>html-dialog-utils</name>
   <artifactId>html-dialog-utils-modules</artifactId>
-  <version>9.3.0-SNAPSHOT</version>
+  <version>9.3.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <modules>
