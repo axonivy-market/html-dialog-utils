@@ -1,5 +1,3 @@
-Axon Ivy's Html Dialog Utils is a collection of useful utilities to help you implement HTML Dialogs. The following utilities are available:
-
 ### ReadOnlyModeListener
 
 This JSF PhaseListener can be used in any HTML Dialog to make parts or the entire form not editable without adding extra controls to the JSF UI components.
