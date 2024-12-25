@@ -13,7 +13,6 @@
     "modifiers" : [ "PERSISTENT" ]
   }, {
     "name" : "readOnlyListener",
-    "type" : "com.axonivy.htmldialog.util.ReadOnlyModeListener",
-    "modifiers" : [ "PERSISTENT" ]
+    "type" : "com.axonivy.htmldialog.util.ReadOnlyModeListener"
   } ]
 }
