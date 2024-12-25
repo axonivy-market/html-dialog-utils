@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "$schema" : "https://json-schema.axonivy.com/process/12.0.0/process.json",
   "id" : "17B78A9AA4FC67DE",
   "kind" : "HTML_DIALOG",
   "config" : {
@@ -10,21 +10,21 @@
       "type" : "HtmlDialogStart",
       "name" : "start(Data)",
       "config" : {
-        "callSignature" : "start",
-        "result" : {
-          "params" : [
-            { "name" : "demoData", "type" : "com.axonivy.htmldialog.util.demo.Data" }
-          ],
-          "map" : {
-            "result.demoData" : "in.demoData"
-          }
-        },
+        "signature" : "start",
         "input" : {
           "params" : [
-            { "name" : "demoData", "type" : "com.axonivy.htmldialog.util.demo.Data" }
+            { "name" : "demoData", "type" : "com.axonivy.htmldialog.util.demo.Data", "desc" : "" }
           ],
           "map" : {
             "out.demoData" : "param.demoData"
+          }
+        },
+        "result" : {
+          "params" : [
+            { "name" : "demoData", "type" : "com.axonivy.htmldialog.util.demo.Data", "desc" : "" }
+          ],
+          "map" : {
+            "result.demoData" : "in.demoData"
           }
         },
         "guid" : "17B78A9AA545D86F"
@@ -33,7 +33,9 @@
         "at" : { "x" : 96, "y" : 64 },
         "labelOffset" : { "x" : 27, "y" : 35 }
       },
-      "connect" : { "id" : "f7", "to" : "f6" }
+      "connect" : [
+        { "id" : "f7", "to" : "f6" }
+      ]
     }, {
       "id" : "f1",
       "type" : "HtmlDialogEnd",
@@ -51,7 +53,9 @@
         "at" : { "x" : 96, "y" : 288 },
         "labelOffset" : { "x" : 10, "y" : 35 }
       },
-      "connect" : { "id" : "f5", "to" : "f4" }
+      "connect" : [
+        { "id" : "f5", "to" : "f4" }
+      ]
     }, {
       "id" : "f4",
       "type" : "HtmlDialogExit",
@@ -75,28 +79,30 @@
       "visual" : {
         "at" : { "x" : 224, "y" : 64 }
       },
-      "connect" : { "id" : "f2", "to" : "f1" }
+      "connect" : [
+        { "id" : "f2", "to" : "f1" }
+      ]
     }, {
       "id" : "f8",
       "type" : "HtmlDialogStart",
       "name" : "startReadOnly(Data)",
       "config" : {
-        "callSignature" : "startReadOnly",
-        "result" : {
-          "params" : [
-            { "name" : "demoData", "type" : "com.axonivy.htmldialog.util.demo.Data" }
-          ],
-          "map" : {
-            "result.demoData" : "in.demoData"
-          }
-        },
+        "signature" : "startReadOnly",
         "input" : {
           "params" : [
-            { "name" : "demoData", "type" : "com.axonivy.htmldialog.util.demo.Data" }
+            { "name" : "demoData", "type" : "com.axonivy.htmldialog.util.demo.Data", "desc" : "" }
           ],
           "map" : {
             "out.demoData" : "param.demoData",
             "out.isReadOnly" : "true"
+          }
+        },
+        "result" : {
+          "params" : [
+            { "name" : "demoData", "type" : "com.axonivy.htmldialog.util.demo.Data", "desc" : "" }
+          ],
+          "map" : {
+            "result.demoData" : "in.demoData"
           }
         },
         "guid" : "17B7BD16365FFDAA"
@@ -105,7 +111,9 @@
         "at" : { "x" : 96, "y" : 128 },
         "labelOffset" : { "x" : 53, "y" : 35 }
       },
-      "connect" : { "id" : "f9", "to" : "f6", "via" : [ { "x" : 224, "y" : 128 } ] }
+      "connect" : [
+        { "id" : "f9", "to" : "f6", "via" : [ { "x" : 224, "y" : 128 } ] }
+      ]
     }, {
       "id" : "f10",
       "type" : "HtmlDialogEventStart",
@@ -124,7 +132,9 @@
         "at" : { "x" : 96, "y" : 224 },
         "labelOffset" : { "x" : 26, "y" : 35 }
       },
-      "connect" : { "id" : "f12", "to" : "f11" }
+      "connect" : [
+        { "id" : "f12", "to" : "f11" }
+      ]
     }, {
       "id" : "f11",
       "type" : "HtmlDialogEnd",
