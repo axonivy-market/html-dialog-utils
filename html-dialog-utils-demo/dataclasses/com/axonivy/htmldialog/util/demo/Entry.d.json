@@ -1,0 +1,13 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/data-class/12.0.0/data-class.json",
+  "simpleName" : "Entry",
+  "namespace" : "com.axonivy.htmldialog.util.demo",
+  "isBusinessCaseData" : false,
+  "fields" : [ {
+    "name" : "carOwner",
+    "type" : "String"
+  }, {
+    "name" : "entryDate",
+    "type" : "java.util.Date"
+  } ]
+}

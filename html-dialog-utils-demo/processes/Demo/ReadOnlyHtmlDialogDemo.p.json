@@ -1,5 +1,5 @@
 {
-  "format" : "10.0.0",
+  "$schema" : "https://json-schema.axonivy.com/process/12.0.0/process.json",
   "id" : "17B78A810F03E36C",
   "config" : {
     "data" : "com.axonivy.htmldialog.util.demo.ReadOnlyHtmlDialogDemoData"
@@ -9,15 +9,18 @@
       "type" : "RequestStart",
       "name" : "start.ivp",
       "config" : {
-        "callSignature" : "start",
-        "outLink" : "start.ivp",
-        "tags" : "demo"
+        "signature" : "start"
       },
+      "tags" : [
+        "demo"
+      ],
       "visual" : {
         "at" : { "x" : 96, "y" : 64 },
         "labelOffset" : { "x" : 12, "y" : 37 }
       },
-      "connect" : { "id" : "f4", "to" : "f3" }
+      "connect" : [
+        { "id" : "f4", "to" : "f3" }
+      ]
     }, {
       "id" : "f1",
       "type" : "TaskEnd",
@@ -32,27 +35,25 @@
         "editable UI"
       ],
       "config" : {
-        "dialogId" : "com.axonivy.htmldialog.util.demo.HtmlDialog",
-        "startMethod" : "start(com.axonivy.htmldialog.util.demo.Data)",
+        "dialog" : "com.axonivy.htmldialog.util.demo.HtmlDialog:start(com.axonivy.htmldialog.util.demo.Data)",
+        "call" : {
+          "map" : {
+            "param.demoData" : "in.demoData"
+          }
+        },
         "output" : {
           "map" : {
             "out" : "in",
             "out.demoData" : "result.demoData"
-          }
-        },
-        "call" : {
-          "params" : [
-            { "name" : "demoData", "type" : "com.axonivy.htmldialog.util.demo.Data" }
-          ],
-          "map" : {
-            "param.demoData" : "in.demoData"
           }
         }
       },
       "visual" : {
         "at" : { "x" : 224, "y" : 64 }
       },
-      "connect" : { "id" : "f6", "to" : "f5" }
+      "connect" : [
+        { "id" : "f6", "to" : "f5" }
+      ]
     }, {
       "id" : "f5",
       "type" : "DialogCall",
@@ -61,26 +62,24 @@
         "read-only UI"
       ],
       "config" : {
-        "dialogId" : "com.axonivy.htmldialog.util.demo.HtmlDialog",
-        "startMethod" : "startReadOnly(com.axonivy.htmldialog.util.demo.Data)",
+        "dialog" : "com.axonivy.htmldialog.util.demo.HtmlDialog:startReadOnly(com.axonivy.htmldialog.util.demo.Data)",
+        "call" : {
+          "map" : {
+            "param.demoData" : "in.demoData"
+          }
+        },
         "output" : {
           "map" : {
             "out" : "in",
             "out.demoData" : "result.demoData"
-          }
-        },
-        "call" : {
-          "params" : [
-            { "name" : "demoData", "type" : "com.axonivy.htmldialog.util.demo.Data" }
-          ],
-          "map" : {
-            "param.demoData" : "in.demoData"
           }
         }
       },
       "visual" : {
         "at" : { "x" : 384, "y" : 64 }
       },
-      "connect" : { "id" : "f2", "to" : "f1" }
+      "connect" : [
+        { "id" : "f2", "to" : "f1" }
+      ]
     } ]
 }
