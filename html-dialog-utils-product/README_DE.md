@@ -1,45 +1,45 @@
 ### ReadOnlyModeListener
 
-Dies JSF PhaseListener kann sein benutzt in irgendwelches #HTML Zwiegespräch zu
-machen Teile oder die ganze Form nicht #editierbar ohne #zufügen #extra
-Aufsichten zu die JSF UI Komponenten.
+Dieser JSF PhaseListener kann in jedem HTML-Dialog verwendet werden, um Teile
+oder das gesamte Formular nicht editierbar zu machen, ohne zusätzliche
+Steuerelemente zu den JSF-UI-Komponenten hinzuzufügen.
 
-Stell vor eine tagtägliche Nutzung Fall wie einen Genehmigung Arbeitsgang. Die
-erste Stufe will eine #editierbar Form zeigen zu einsetzen alle die bedürft
-Auskunft. In der nächsten Stufe, ebensolche gleiche Form fungiert herein
-gelesen-einziges Verfahren, so will der Nutzer überprüfen der betreten Auskunft
-und dann beschließen ob zu billigen oder aussterben die Bitte.
+Stellen Sie sich einen alltäglichen Anwendungsfall wie einen Genehmigungsprozess
+vor. Im ersten Schritt wird ein editierbares Formular angezeigt, in das alle
+erforderlichen Informationen eingegeben werden müssen. Im nächsten Schritt
+erscheint dasselbe Formular im schreibgeschützten Modus, sodass der Benutzer die
+eingegebenen Informationen überprüfen und dann entscheiden kann, ob er den
+Antrag genehmigt oder ablehnt.
 
-Das **ReadOnlyModeListener** will Looping durch jede der eingeschlossen Ersatz
-UI Komponenten innerhalb dem hauptsächlichen Elter Komponente und bewerben die
-Gefolgschaft:
-* Alle Input Komponenten und Bänder wollen sein ausgeschaltet
-* Alle Knöpfe wollen nicht sein #ausschmelzen
-* Alle #Daten Tische wollen nicht sein #editierbar
-* Alle Komponenten habend die Stil Klasse `doNotRenderInReadOnlyMode` will nicht
-  sein #ausschmelzen
-* Alle Komponenten habend die Stil Klasse `doNotDisable` will nicht sein
-  ausgeschaltet
+Der „ **” „ReadOnlyModeListener” „** ” durchläuft alle enthaltenen
+Unter-UI-Komponenten innerhalb der übergeordneten Hauptkomponente und wendet
+Folgendes an:
+* Alle Eingabekomponenten und Links werden deaktiviert.
+* Alle Schaltflächen werden nicht gerendert.
+* Alle Datentabellen sind nicht editierbar.
+* Alle Komponenten mit der Stilklasse „ `” und „doNotRenderInReadOnlyMode” „` ”
+  werden nicht gerendert.
+* Alle Komponenten mit der Stilklasse „ `” und „doNotDisable” „` ” werden nicht
+  deaktiviert.
 
 ## Demo
 
-1. Setz ein das folgendes #editierbar Html-Zwiegespräch Form
+1. Füllen Sie das folgende bearbeitbare HTML-Dialogformular aus.
 
-   ![#Editierbar-Html-Zwiegespräch](images/EditableHtmlDialog.png)
+   ![Editable-Html-Dialog](images/EditableHtmlDialog.png)
 
-Und klicken weiter "Verfahren".
+Klicken Sie auf „Weiter“.
 
 
-2. In der nächsten Stufe #dieselbe Html-Zwiegespräch will sein #ausschmelzen da
-   Gelesen-Einzige ohne #zufügen irgendwelche #extra Attribute zu die JSF UI
-   Komponenten.
+2. Im nächsten Schritt wird derselbe HTML-Dialog als schreibgeschützt gerendert,
+   ohne dass den JSF-UI-Komponenten zusätzliche Attribute hinzugefügt werden.
 
-   ![Gelesen-Einzige-Html-Zwiegespräch](images/Read-OnlyHtmlDialog.png)
+   ![Read-Only-Html-Dialog](images/Read-OnlyHtmlDialog.png)
 
 ## Einrichtung
 
-1. Du kannst initialisieren das ReadOnlyModeListener an das Nutzer Zwiegespräch
-   Start Methode folgendermaßen:
+1. Sie können den ReadOnlyModeListener in der Startmethode des Benutzerdialogs
+   wie folgt initialisieren:
 
    ```
 
@@ -48,8 +48,8 @@ Und klicken weiter "Verfahren".
 
    ```
 
-2. Herein das XHTML Seite, du sollen zufügen die JSF phaseListener Element
-   folgendermaßen:
+2. In der XHTML-Seite sollten Sie das JSF-Element „phaseListener” wie folgt
+   hinzufügen:
 
    ```
 
@@ -57,8 +57,8 @@ Und klicken weiter "Verfahren".
 
    ```
 
-* Bei #voreingestellt, das ReadOnlyModeListener ist #ausschalten und den
-  hauptsächlichen Elter Komponente id ist `Form`.
-* Zu aktivieren ihm, du kannst den Parameter setzen `isEnabled=wahr`.
-* Zu präzisieren den hauptsächlichen Elter Komponente id, du kannst den
-  Parameter setzen ContainerId.
+* Standardmäßig ist der ReadOnlyModeListener deaktiviert und die ID der
+  übergeordneten Hauptkomponente lautet „ `“ aus „` “.
+* Um sie zu aktivieren, können Sie den Parameter `isEnabled=true` setzen.
+* Um die ID der übergeordneten Hauptkomponente anzugeben, können Sie den
+  Parameter ContainerId festlegen.
