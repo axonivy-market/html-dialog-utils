@@ -36,7 +36,7 @@ Klicken Sie auf „Weiter“.
 
    ![Read-Only-Html-Dialog](images/Read-OnlyHtmlDialog.png)
 
-## Einrichtung
+## Setup
 
 1. Sie können den ReadOnlyModeListener in der Startmethode des Benutzerdialogs
    wie folgt initialisieren:
