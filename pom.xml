@@ -7,14 +7,14 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>${project.name}</module>
-    <module>${project.name}-demo</module>
-    <module>${project.name}-test</module>
-    <module>${project.name}-product</module>
+    <module>html-dialog-utils</module>
+    <module>html-dialog-utils-demo</module>
+    <module>html-dialog-utils-test</module>
+    <module>html-dialog-utils-product</module>
   </modules>
 
   <scm>
-    <developerConnection>scm:git:https://github.com/axonivy-market/${project.name}.git</developerConnection>
+    <developerConnection>scm:git:https://github.com/axonivy-market/html-dialog-utils.git</developerConnection>
     <tag>v10.0.1</tag>
   </scm>
 
