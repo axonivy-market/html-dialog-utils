@@ -42,19 +42,15 @@ Klicken Sie auf „Weiter“.
    wie folgt initialisieren:
 
    ```
-
-        in.readOnlyListener = new ReadOnlyModeListener();
+   in.readOnlyListener = new ReadOnlyModeListener();
         in.readOnlyListener.enabled = true;
-
    ```
 
 2. In der XHTML-Seite sollten Sie das JSF-Element „phaseListener” wie folgt
    hinzufügen:
 
    ```
-
-        <f:phaseListener binding="#{data.readOnlyListener}" />
-
+   <f:phaseListener binding="#{data.readOnlyListener}" />
    ```
 
 * Standardmäßig ist der ReadOnlyModeListener deaktiviert und die ID der
