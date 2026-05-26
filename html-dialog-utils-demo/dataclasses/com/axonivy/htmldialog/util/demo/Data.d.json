@@ -1,22 +1,23 @@
 {
-  "$schema" : "https://json-schema.axonivy.com/data-class/12.0.0/data-class.json",
+  "$schema" : "https://json-schema.axonivy.com/14.0-dev/project/data-class.json",
   "simpleName" : "Data",
   "namespace" : "com.axonivy.htmldialog.util.demo",
-  "isBusinessCaseData" : false,
   "fields" : [ {
     "name" : "comment",
-    "type" : "String"
+    "modifiers" : [ ]
   }, {
     "name" : "isSelected",
-    "type" : "Boolean"
+    "type" : "Boolean",
+    "modifiers" : [ ]
   }, {
     "name" : "carType",
-    "type" : "String"
+    "modifiers" : [ ]
   }, {
     "name" : "console",
-    "type" : "String"
+    "modifiers" : [ ]
   }, {
     "name" : "listEntries",
-    "type" : "java.util.List<com.axonivy.htmldialog.util.demo.Entry>"
+    "type" : "java.util.List<com.axonivy.htmldialog.util.demo.Entry>",
+    "modifiers" : [ ]
   } ]
 }

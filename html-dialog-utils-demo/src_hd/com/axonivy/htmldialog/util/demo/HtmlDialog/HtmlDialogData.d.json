@@ -1,18 +1,16 @@
 {
-  "$schema" : "https://json-schema.axonivy.com/data-class/12.0.0/data-class.json",
+  "$schema" : "https://json-schema.axonivy.com/14.0-dev/project/data-class.json",
   "simpleName" : "HtmlDialogData",
   "namespace" : "com.axonivy.htmldialog.util.demo.HtmlDialog",
-  "isBusinessCaseData" : false,
   "fields" : [ {
     "name" : "demoData",
-    "type" : "com.axonivy.htmldialog.util.demo.Data",
-    "modifiers" : [ "PERSISTENT" ]
+    "type" : "com.axonivy.htmldialog.util.demo.Data"
   }, {
     "name" : "isReadOnly",
-    "type" : "Boolean",
-    "modifiers" : [ "PERSISTENT" ]
+    "type" : "Boolean"
   }, {
     "name" : "readOnlyListener",
-    "type" : "com.axonivy.htmldialog.util.ReadOnlyModeListener"
+    "type" : "com.axonivy.htmldialog.util.ReadOnlyModeListener",
+    "modifiers" : [ ]
   } ]
 }
