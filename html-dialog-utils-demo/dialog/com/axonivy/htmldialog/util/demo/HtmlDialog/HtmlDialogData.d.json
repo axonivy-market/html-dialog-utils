@@ -4,10 +4,12 @@
   "namespace" : "com.axonivy.htmldialog.util.demo.HtmlDialog",
   "fields" : [ {
     "name" : "demoData",
-    "type" : "com.axonivy.htmldialog.util.demo.Data"
+    "type" : "com.axonivy.htmldialog.util.demo.Data",
+    "modifiers" : [ ]
   }, {
     "name" : "isReadOnly",
-    "type" : "Boolean"
+    "type" : "Boolean",
+    "modifiers" : [ ]
   }, {
     "name" : "readOnlyListener",
     "type" : "com.axonivy.htmldialog.util.ReadOnlyModeListener",
