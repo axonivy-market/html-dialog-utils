@@ -1,0 +1,10 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/14.0/project/data-class.json",
+  "simpleName" : "ReadOnlyHtmlDialogDemoData",
+  "namespace" : "com.axonivy.htmldialog.util.demo",
+  "fields" : [ {
+    "name" : "demoData",
+    "type" : "com.axonivy.htmldialog.util.demo.Data",
+    "modifiers" : [ ]
+  } ]
+}

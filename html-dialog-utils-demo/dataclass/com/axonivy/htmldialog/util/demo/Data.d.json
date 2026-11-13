@@ -1,0 +1,23 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/14.0/project/data-class.json",
+  "simpleName" : "Data",
+  "namespace" : "com.axonivy.htmldialog.util.demo",
+  "fields" : [ {
+    "name" : "comment",
+    "modifiers" : [ ]
+  }, {
+    "name" : "isSelected",
+    "type" : "Boolean",
+    "modifiers" : [ ]
+  }, {
+    "name" : "carType",
+    "modifiers" : [ ]
+  }, {
+    "name" : "console",
+    "modifiers" : [ ]
+  }, {
+    "name" : "listEntries",
+    "type" : "java.util.List<com.axonivy.htmldialog.util.demo.Entry>",
+    "modifiers" : [ ]
+  } ]
+}
